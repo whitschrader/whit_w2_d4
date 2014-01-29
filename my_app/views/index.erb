@@ -1,0 +1,28 @@
+<!-- index.erb  -->
+ 
+
+<div  class ="container">
+
+<!-- action="/example" -->
+<!-- action is the route where the request will be sent on submission -->
+<!-- method="GET" or "POST" -->
+<!-- Just http verb used on submission of the form -->
+
+<form action="/add" method="POST">
+	 <!-- params[:animal] in sinatra -->
+	<input type="text" name="animal[species]">
+	<textarea name="animal[description]"></textarea>
+	<button>Submit</button>
+</form>
+
+<%  @animals.each do |animal| %>
+	<div>
+		SPECIES: <%= animal[:species] %> <br>
+		Description: 
+		<p> 
+			<%= animal[:description] %>
+		</p>
+	</div>
+<% end %>
+
+</div>

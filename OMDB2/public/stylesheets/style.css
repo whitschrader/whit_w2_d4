@@ -1,0 +1,75 @@
+.resultstitle {
+
+}
+
+
+.left{
+	resize: vertical;
+	overflow: auto;
+}
+
+.right{
+	resize: vertical;
+	overflow: auto;
+}
+
+
+.style-list {
+	font-family: font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+	padding-right: 10px;
+	padding-top: 20px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+.container {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	text-align: center;
+	box-shadow: 3px 4px 4px #B3B3B3;;
+	border-color: grey;
+
+}
+
+
+body {
+	background-image:url('http://mezermedia.com/wp-content/uploads/2012/04/simple-blue-opera-background-light-490011.jpg');
+	font-family: 'Dosis', sans-serif;
+}
+
+.form-inline{
+	margin: 20px;
+}
+
+input[type=text] {
+	color: slate-gray;
+	font-size: 30px;
+	width: 100%;
+	padding: auto;
+
+
+}
+h1 {	
+	font-family: 'Dosis', sans-serif;
+	font-size: 45px;
+	text-align: center;
+}
+
+input {
+	text-align: left;
+	margin-right: 5px;
+}
+
+.form-control {
+
+}
+
+.btn-primary {
+	margin-left: 5px;
+}

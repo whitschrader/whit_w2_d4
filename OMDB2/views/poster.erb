@@ -1,0 +1,28 @@
+<!-- My poster information will go here -->
+
+
+ 	<head>
+ 		<title>Movie Info</title>
+ 		<link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
+ 	</head>
+
+ 	<body>
+ 		<h1>Movie Info</h1>
+ 			<!-- <h3><img src = #{j_input["Poster"]}> </h3> -->
+		<img src="<%= "#{@j_input["Poster"]}" %>"><br/>
+		<!-- working from left to right: <img src=" is html, then we convert to ruby and run the function calling a string interpolation on the array looking for poster. We then flip out of ruby and back to html, thus we have to cap both book ends with quote.  -->
+
+		<ul>
+			<!-- trying to call the releasedyear -->
+			<li><%= @j_input["Plot"] %></li>
+			<li><%= @j_input["Year"] %></li>
+			<li><%= @j_input["Rated"] %></li>
+			<li><%= @j_input["Runtime"] %></li>
+			<li><%= @j_input["Genre"] %></li>
+			<li><%= @j_input["Director"] %></li>
+			<li><%= @j_input["Actors"] %></li><br/>
+		</ul> 
+		<a href="/">New Search</a>
+	</body>

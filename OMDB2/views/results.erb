@@ -1,0 +1,32 @@
+<!-- Results of my Movie Search are below.  -->
+<!-- from index.erb -->
+
+<body>
+	
+	<div class="resultstitle" > 
+		<h1 <span style="margin-top: 30px">Movie Results</span></h1>
+	</div>
+			<div class="container"> 
+				<div class="row">
+					<div class="col-xs-6 col-md-4 left">
+						<ul class="style-list">
+							<% @display.each do |movies| %>
+							<li><a href="../poster/<%= movies["imdbID"] %>"id="movie" rel="popover"><%= movies["Title"]%> <%= movies["Year"] %> 
+								<img src='<%movies["Poster"] %>'></a></li>
+							<%end%> 
+						</ul>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-8 right">
+		 			<!-- <h3><img src = #{j_input["Poster"]}> </h3> -->
+						
+				<!-- working from left to right: <img src=" is html, then we convert to ruby and run the function calling a string interpolation on the array looking for poster. We then flip out of ruby and back to html, thus we have to cap both book ends with quote.  -->
+						
+					</div>
+
+					<a href="/">New Search</a>
+</body>
+<script>
+
+$("#movie").popover({content:<img src ="https://blog.twitter.com/sites/all/themes/gazebo/img/twitter-bird-white-on-blue.png"/>}); 
+  </script>
